@@ -1,1 +1,18 @@
 
+CREATE DATABASE CollegeDB;
+USE CollegeDB;
+
+CREATE TABLE Course (
+ Course_ID NUMERIC(5) PRIMARY KEY,
+ Course_Name VARCHAR(20) NOT NULL,
+ Credits NUMERIC(2) NOT NULL,
+ Department_ID NUMERIC(5) NOT NULL
+);
+INSERT INTO Course
+VALUES (201, 'Python', 4, 101);
+INSERT INTO Course
+VALUES (202, 'DBMS', 3, 102);
+INSERT INTO Course
+VALUES (203, 'Java', 4, 103);
+SELECT * FROM Course;
+DESCRIBE Course;
